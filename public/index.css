@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: 0;
+}
+
+.title{
+    margin-left: 30px;
+}
+
+.index{
+   width: fit-content;
+   height: fit-content;
+   margin-left: 30%;
+   margin-top: 30px;
+}
+
+.addnewtask-input{
+    width: 250px;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+
+.first-li,.last-li{
+    margin-top: 10px;
+    font-size: xx-large;
+}
+
+.add-btn{
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.remove-btn{
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 80px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.remove-btn:hover{
+    background-color: black;
+    color: white;
+    
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/index.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="index">
+    <form action="/addTask" method="POST">
+
+        <h1 class="title">to do list</h1>
+<input type="text" placeholder="add new task" name="addNewTask" class='addnewtask-input'/>
+        <button type="submit" formaction="/addTask" class="add-btn">add</button>
+         <% for(let i = 0; i < firstArr.length; i++){ %>
+        <li class="first-li"><input type="checkbox" name="checkk" class="check-input" value="<%= firstArr[i] %>" /> <%= firstArr[i] %></li>
+        <% } %>
+        
+        <button class="remove-btn" type="submit" formaction="/removeTask">remove</button>
+        
+    
+    </form>
+    <div>
+        <% for(let i = 0; i < lastArr.length; i++){ %>
+            <li class="last-li"><%= lastArr[i] %></li>
+            <% } %>
+    </div>
+    </div>
+</body>
+</html>
